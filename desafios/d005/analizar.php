@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Desafio PHP 05</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../estilos/style.css">
 </head>
 <body>
     <main>
@@ -17,8 +17,8 @@
 
             $num_formatado = number_format($num, 3, ',', '.');
             $inteira = number_format($int, 0, ',', '.');
-            $fracionária = number_format($fracio, 3, ',', '.');
-            
+            $fracionária = number_format($fra, 3, ',', '.');
+
             echo "<ul><p>Analisando o número <strong>$num_formatado</strong> informado pelo usuário:</p>
                 <li>A parte inteira do número é <strong>$inteira</strong></li>
                 <li>A parte fracionário do número é <strong>$fracionária</strong></li>

@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Desafio PHP 04</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../estilos/style.css">
 </head>
 <body>
     <main>
@@ -33,6 +33,7 @@
             // $formatado = number_format($dolar, 2, ',', '.');
             // echo "<p>Seus R$ $reais equivalem a <strong>US$ $formatado</strong></p>";
         ?>
+        <p style="font-size: smaller;">*Cotação obtida diretamente do site do <a href="https://www.bcb.gov.br/">Banco Central do Brasil</a></p>
         <button onclick="javascript:history.go(-1)">Voltar</button>
     </main>
 </body>
