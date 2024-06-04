@@ -10,15 +10,23 @@
     <main>
         <h1><strong>Resultado Final</strong></h1>
         <?php 
-        $num = $_GET['num'];
-        $numAnte = $num - 1;
-        $numSuce = $num + 1;
+        $num = $_GET['num'] ?? 0;
+
+        function numAnte($num){
+            $num = $num - 1;
+            return $num;
+        }
+
+        function numSuce($num){
+            $num = $num + 1;
+            return $num;
+        }
 
         echo "<p>O número escolhido foi <strong>$num</strong></p>";
-        echo "<p>O seu antecessor é $numAnte</p>";
-        echo "<p>O seu sucessor é $numSuce</p>";
+        echo "<p>O seu <em>antecessor</em> é " . numAnte($num) . "</p>";
+        echo "<p>O seu <em>sucessor</em> é " . numSuce($num) . "</p>";
         ?>
-        <p><a href="javascript:history.go(-1)">Voltar</a></p>
+        <button onclick="javascript:history.go(-1)">&#x2B05; Voltar</button>
     </main>
 
 </body>
